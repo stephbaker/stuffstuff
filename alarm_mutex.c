@@ -234,7 +234,6 @@ void *alarm_thread (void *arg)
 int main (int argc, char *argv[])
 {
     char request[100];
-    char request2[100];
 
     int status;
     char line[128];
@@ -266,9 +265,6 @@ int main (int argc, char *argv[])
             fprintf (stderr, "Bad command\n");
             free (alarm);
         } else {
-          printf("%s\n", request);
-          char *request2 = strchr('(', '(');
-          printf("%s", request2);
 
           if (alarm->id >= 0) {
 
